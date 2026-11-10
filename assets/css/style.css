@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#182033;--muted:#687187;--purple:#7047eb;--soft:#f6f5fb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{font-family:'DM Sans',sans-serif;color:var(--ink)}
+h1,h2,h3,h4,.navbar-brand{font-family:'Manrope',sans-serif}
+.navbar{background:rgba(20,24,43,.97);padding:15px 0}
+.navbar-brand{font-size:1.45rem;letter-spacing:1px}
+.navbar-brand span{color:#a995ff}
+.nav-link{color:rgba(255,255,255,.8)!important;font-weight:500}
+.nav-link:hover{color:white!important}
+.hero{background:radial-gradient(circle at 85% 45%,#29234c 0,#171b31 42%,#111729 78%);color:white;overflow:hidden}
+.eyebrow{color:#a995ff;font-size:.76rem;font-weight:700;letter-spacing:2px;margin-bottom:16px}
+.eyebrow span{display:inline-block;width:25px;height:2px;background:#a995ff;vertical-align:middle;margin-right:8px}
+.hero h1{font-size:clamp(2.7rem,5vw,4.8rem);line-height:1.13;font-weight:800;max-width:850px}
+.hero h1 span{color:#a995ff}
+.hero-subtitle{font-size:1.35rem;font-weight:600;margin:22px 0 10px}
+.hero-description{color:#c4c8d6;font-size:1.05rem;line-height:1.8;max-width:650px;margin-bottom:28px}
+.btn-primary-custom{background:var(--purple);color:white;padding:13px 22px;border-radius:9px;font-weight:600}
+.btn-primary-custom:hover{background:#5431c8;color:white}
+.btn-outline-custom{border:1px solid #777d91;color:white;padding:13px 22px;border-radius:9px}
+.btn-outline-custom:hover{background:white;color:var(--ink)}
+.profile-visual{min-height:340px;position:relative;display:grid;place-items:center}
+.profile-ring{width:270px;height:270px;border:1px solid rgba(169,149,255,.45);border-radius:50%;position:absolute}
+.profile-ring:before{content:"";position:absolute;inset:25px;border:1px dashed rgba(169,149,255,.5);border-radius:50%}
+.profile-icon{width:145px;height:145px;border-radius:35px;background:linear-gradient(145deg,#987cff,#5733cf);display:grid;place-items:center;font-size:5rem;box-shadow:0 25px 70px rgba(80,48,190,.4);transform:rotate(-7deg)}
+.profile-label{position:absolute;bottom:28px;right:0;background:white;color:var(--ink);padding:12px 17px;border-radius:10px;font-weight:600;box-shadow:0 10px 30px #0002}
+.section-padding{padding:90px 0}
+.eyebrow.purple{color:var(--purple)}
+h2{font-size:clamp(2rem,4vw,3rem);font-weight:800}
+.info-panel,.details-panel,.education-card{background:white;border:1px solid #ececf3;border-radius:18px;padding:30px}
+.info-panel h3{font-weight:800;margin-bottom:18px}
+.info-panel p{color:var(--muted);line-height:1.9}
+.details-panel{background:#fbfaff;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.detail-row{display:flex;flex-direction:column;gap:4px}
+.detail-row span{font-size:.85rem;color:var(--muted)}
+.detail-row strong{font-size:1rem}
+.soft-section{background:var(--soft)}
+.education-card{display:flex;align-items:center;gap:22px;max-width:750px}
+.education-icon{width:65px;height:65px;flex-shrink:0;border-radius:16px;background:#e9e3ff;color:var(--purple);display:grid;place-items:center;font-size:1.8rem}
+.education-card h3{font-size:1.25rem;font-weight:800}
+.education-card p{color:var(--muted)}
+.education-card span{font-size:.9rem;color:var(--muted)}
+.contact-section{background:#171b31;color:white}
+.contact-copy{color:#c4c8d6;margin:18px auto 25px;max-width:600px}
+.contact-links{display:flex;flex-direction:column;align-items:center;gap:14px}
+.contact-links a{color:white;text-decoration:none}
+.contact-links a:hover{color:#a995ff}
+.contact-links i{margin-right:8px;color:#a995ff}
+.footer{background:#101426;color:#aeb4c6;padding:24px 0;font-size:.9rem}
+.footer a{color:white;text-decoration:none}
+@media(max-width:991px){.hero .min-vh-100{min-height:auto!important;padding-top:135px!important;padding-bottom:60px!important}.profile-visual{min-height:280px}}
+@media(max-width:575px){.section-padding{padding:65px 0}.profile-ring{width:220px;height:220px}.profile-icon{width:120px;height:120px;font-size:4rem}.education-card{align-items:flex-start;padding:22px}}
